@@ -1,25 +1,16 @@
 import './App.css'
+// Teeno naye components ko import kar rahe hain
+import Header from './components/Header.jsx'
+import About from './components/About.jsx'
+import Footer from './components/Footer.jsx'
 
-// Ye main component hai jo pura page banata hai
+// Ab App.jsx sirf inko "jodne" ka kaam karta hai — asli content component files mein hai
 function App() {
   return (
     <div className="container">
-      {/* Header section */}
-      <header>
-        <h1>Welcome to My Website 🚀</h1>
-        <p>Built with React, deployed via Vercel</p>
-      </header>
-
-      {/* About section */}
-      <section className="about">
-        <h2>About Me</h2>
-        <p>Ye mera pehla React website hai jo maine khud banaya hai.</p>
-      </section>
-
-      {/* Footer section */}
-      <footer>
-        <p>© 2026 My Website. All rights reserved.</p>
-      </footer>
+      <Header />
+      <About />
+      <Footer />
     </div>
   )
 }
