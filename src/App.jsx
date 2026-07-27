@@ -1,17 +1,28 @@
 import './App.css'
-// Teeno naye components ko import kar rahe hain
-import Header from './components/Header.jsx'
-import About from './components/About.jsx'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import Contact from './pages/Contact.jsx'
 import Footer from './components/Footer.jsx'
 
-// Ab App.jsx sirf inko "jodne" ka kaam karta hai — asli content component files mein hai
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <About />
-      <Footer />
-    </div>
+    // BrowserRouter pura app ko "routing" ki power deta hai
+    <BrowserRouter>
+      <div className="container">
+        {/* Navigation menu - Link se page change hota hai bina reload ke */}
+        <nav>
+          <Link to="/">Home</Link> | <Link to="/contact">Contact</Link>
+        </nav>
+
+        {/* Routes batata hai kaunse URL pe kaunsa page dikhana hai */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 
