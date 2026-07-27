@@ -1,0 +1,19 @@
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+header h1 {
+  color: #2563eb;
+}
+
+.about {
+  margin: 40px 0;
+}
+
+footer {
+  margin-top: 60px;
+  color: #666;
+  font-size: 14px;
+}
