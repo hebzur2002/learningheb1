@@ -17,6 +17,7 @@ function App() {
         {/* Routes batata hai kaunse URL pe kaunsa page dikhana hai */}
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />   {/* naya add kiya */}
           <Route path="/contact" element={<Contact />} />
         </Routes>
 
