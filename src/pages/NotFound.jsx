@@ -5,6 +5,7 @@ function NotFound() {
       <h1>404</h1>
       <h2>Page Not Found</h2>
       <p>Jo page tum dhoondh rahe ho wo exist nahi karta.</p>
+      <p>ak kam karo tum mujhe direct contact karo. <br> mera instagram lelo </p>
     </div>
   )
 }
